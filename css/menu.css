@@ -1,0 +1,77 @@
+nav {
+  position: relative;
+}
+
+nav ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+nav ul.menu li {
+  padding: 20px 0;
+  white-space: nowrap;
+}
+
+nav ul.menu li.logo {
+  flex: 1;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+nav ul.menu li.logo a {
+  color: #ceb39d;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+}
+
+nav ul.menu li.item {
+  display: block;
+  width: auto;
+  padding: 0 10px;
+  font-weight: 100;
+}
+
+nav ul.menu li.item.item.active {
+  display: block;
+}
+
+nav ul.menu li:not(.logo) a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 1px;
+  background: #ceb39d;
+  transition: width 0.3s;
+}
+
+nav ul.menu li a:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  nav ul.menu li.logo a {
+    font-size: 2rem;
+  }
+
+  nav ul.menu li a {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav ul.menu {
+    flex-direction: column;
+  }
+
+  nav ul.menu li a {
+    margin-bottom: 10px;
+  }
+}

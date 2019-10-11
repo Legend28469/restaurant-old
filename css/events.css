@@ -1,0 +1,94 @@
+.events {
+  height: 100vh;
+  padding: 150px 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.events .grill-img {
+  background: url("../build/community.webp");
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.events .description {
+  padding: 30px 70px 30px 80px;
+  background: #fff;
+  height: 400px;
+}
+
+.events .description h4 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  color: #1c1418;
+  margin-bottom: 20px;
+}
+
+.events .description h4 .dancing {
+  font-family: "Dancing Script", cursive;
+  color: #ceb39d;
+}
+
+.events .description p {
+  color: #77737a;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.events .description h6 {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.events .description .more {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.events .description .more a {
+  font-size: 1.2rem;
+  color: #ceb39d;
+  margin-top: 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.events .description .more a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 1px;
+  background: #ceb39d;
+  transition: width 0.3s;
+}
+
+.events .description .more a:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  .events {
+    display: block;
+    overflow: initial;
+  }
+
+  .events .grill-img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .events .description {
+    padding: 20px 30px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+}

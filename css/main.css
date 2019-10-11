@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:100,400,700&display=optional");
+@import "./reset.css";
+
+@import "./menu.css";
+@import "./header.css";
+@import "./story.css";
+@import "./food.css";
+@import "./events.css";
+
+/* 
+  font-family: 'Dancing Script', cursive; -- 400
+  font-family: 'Josefin Sans', sans-serif; -- 100, 400, 700
+*/
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #1b191b;
+}
+
+body {
+  background: #1b191b;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  header .heading .image .pan-image {
+    width: 350px;
+    position: absolute;
+    left: 405px;
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header .heading .image .pan-image {
+    display: none;
+  }
+
+  /* .food .main-dish .text {
+    display: none;
+  } */
+
+  .food .main-dish .text p {
+    white-space: wrap;
+  }
+
+  .food .dessert .text p {
+    white-space: wrap;
+  }
+}

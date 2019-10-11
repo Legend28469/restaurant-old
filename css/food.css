@@ -1,0 +1,277 @@
+.food {
+  padding: 20px 0;
+}
+
+.food .our-menu {
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.food .our-menu .header {
+  flex: 2;
+  color: #fff;
+}
+
+.food .our-menu .header h4 {
+  text-align: right;
+  padding-right: 40px;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.food .our-menu .header h4 span {
+  font-family: "Dancing Script", cursive;
+  color: #ceb39d;
+}
+
+.food .our-menu .text p {
+  padding-left: 40px;
+}
+
+.food .our-menu .text {
+  flex: 3;
+  color: #fff;
+}
+
+.food .appetizer {
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.food .appetizer .plate-img {
+  flex: 1;
+  padding-right: 100px;
+}
+
+.food .appetizer .plate-img img {
+  max-width: 400px;
+  float: right;
+}
+
+.food .appetizer .text {
+  flex: 1;
+  color: #fff;
+}
+
+.food .appetizer .text h4 {
+  font-family: "Dancing Script", cursive;
+  color: #ceb39d;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+.food .main-dish {
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.food .main-dish .text {
+  flex: 1;
+  color: #fff;
+}
+
+.food .main-dish .text h4 {
+  font-family: "Dancing Script", cursive;
+  color: #ceb39d;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  justify-self: flex-end;
+  padding-left: 150px;
+}
+
+.food .main-dish .text p {
+  padding-left: 150px;
+}
+
+.food .main-dish .plate-img {
+  flex: 1;
+}
+
+.food .main-dish .plate-img img {
+  padding-right: 75px;
+}
+
+.food .side-dish {
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.food .side-dish .plate-img {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.food .side-dish .plate-img img {
+  max-width: 500px;
+}
+
+.food .side-dish .text {
+  flex: 1;
+  padding-left: 55px;
+  color: #fff;
+}
+
+.food .side-dish .text h4 {
+  font-family: "Dancing Script", cursive;
+  color: #ceb39d;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  justify-self: flex-end;
+}
+
+.food .dessert {
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.food .dessert .text {
+  flex: 1;
+  color: #fff;
+}
+
+.food .dessert .text h4 {
+  font-family: "Dancing Script", cursive;
+  color: #ceb39d;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  justify-self: flex-end;
+  padding-left: 150px;
+}
+
+.food .dessert .text p {
+  padding-left: 150px;
+}
+
+.food .dessert .plate-img {
+  flex: 1;
+  padding-right: 70px;
+}
+
+.food .dessert .plate-img img {
+  max-width: 500px;
+}
+
+@media only screen and (max-width: 960px) {
+  .food .our-menu {
+    justify-content: space-around;
+  }
+
+  .food .our-menu .header,
+  .food .our-menu .text {
+    flex: none;
+  }
+
+  .food .appetizer {
+    justify-content: space-between;
+  }
+
+  .food img {
+    max-width: 400px !important;
+  }
+
+  .food .appetizer .plate-img {
+    flex: none;
+    padding-right: 0;
+  }
+
+  .food .appetizer .text {
+    text-align: center !important;
+  }
+
+  .food .main-dish .text h4 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .food .main-dish .text p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .food .main-dish .plate-img {
+    padding: 0;
+  }
+
+  .food .main-dish .plate-img img {
+    padding-right: 0;
+  }
+
+  .food .side-dish .plate-img {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+  .food .side-dish .text {
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .food .dessert .plate-img {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+  .food .dessert .text {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .food .dessert .text h4,
+  .food .dessert .text p {
+    padding: 0 0 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .food .our-menu {
+    margin-top: 0;
+  }
+
+  .food .our-menu .header,
+  .food .our-menu .text {
+    flex: 1;
+  }
+
+  .food .appetizer {
+    flex-direction: column;
+  }
+
+  .food img {
+    width: 100%;
+  }
+
+  .food .appetizer .plate-img {
+    margin-bottom: 50px;
+  }
+
+  .food .appetizer .text {
+    margin-bottom: 30px;
+  }
+
+  .food .main-dish {
+    flex-direction: column-reverse;
+  }
+
+  .food .main-dish .plate-img {
+    margin-bottom: 50px;
+  }
+
+  .food .main-dish .text {
+    margin-bottom: 30px;
+  }
+
+  .food .side-dish {
+    flex-direction: column;
+  }
+
+  .food .dessert {
+    flex-direction: column-reverse;
+  }
+}

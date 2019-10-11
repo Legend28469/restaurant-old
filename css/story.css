@@ -1,0 +1,98 @@
+.story {
+  height: 100vh;
+  padding: 150px 0;
+  display: flex;
+}
+
+.story .grill-img {
+  background: url("../build/Outback-Moonshine-BBQ-Combo-Platter.webp");
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.story .description {
+  padding: 30px 70px 30px 80px;
+  background: #fff;
+  height: 400px;
+}
+
+.story .description h4 {
+  text-transform: capitalize;
+  line-height: 1.5;
+  font-size: 3rem;
+  color: #1c1418;
+}
+
+.story .description h4 .dancing {
+  font-family: "Dancing Script", cursive;
+  color: #ceb39d;
+}
+
+.story .description p {
+  color: #77737a;
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+.story .description .more {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.story .description .more a {
+  font-size: 1.2rem;
+  color: #ceb39d;
+  margin-top: 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.story .description .more a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 1px;
+  background: #ceb39d;
+  transition: width 0.3s;
+}
+
+.story .description .more a:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  .story {
+    height: initial;
+    padding: 250px 0 100px;
+  }
+
+  .story .description {
+    height: 500px;
+    padding: 20px 30px;
+  }
+
+  .story .grill-img {
+    height: 500px;
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .story {
+    display: block;
+  }
+
+  .story .description {
+    height: auto;
+  }
+
+  .story .grill-img {
+    height: 400px;
+  }
+}
